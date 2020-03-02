@@ -7,26 +7,15 @@ import about from './components/pages/about';
 import  {v4 as uuidv4} from 'uuid';
 
 import './App.css';
+import axios from 'axios';
 
 class App extends Component {
   state = {
-    todos: [
-      {
-        id: uuidv4(),
-        title: "Make a doctor's appointment",
-        completed: true
-      },
-      {
-        id: uuidv4(),
-        title: "Cook dinner",
-        completed: false
-      },
-      {
-        id: uuidv4(),
-        title: "Learn more algorithms",
-        completed: false
-      }
-    ]
+    todos: []
+  }
+  componentDidMount() {
+    axios.get('https://jsonplaceholder.typicode.com/todos')
+    .then(res => this.setState({todos:res.data}))
   }
 
   //Toggle the todo list
