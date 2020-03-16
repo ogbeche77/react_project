@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; //class base component
 import Todoitems from './Todoitems';
 import PropTypes from 'prop-types';
 class Todos extends Component {
