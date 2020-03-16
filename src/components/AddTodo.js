@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; //class base component
 import PropTypes from 'prop-types';
 
 export class AddTodo extends Component {
