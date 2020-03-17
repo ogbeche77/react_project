@@ -13,9 +13,10 @@ class App extends Component {
   state = {
     todos: []
   }
+  //lifecyle request
   componentDidMount() {
     axios.get('https://jsonplaceholder.typicode.com/todos')
-    .then(res => this.setState({todos:res.data}))
+    .then(res => this.setState({todos:res.data})) // to pull todos from jsonplaceholder
   }
 
   //Toggle the todo list
