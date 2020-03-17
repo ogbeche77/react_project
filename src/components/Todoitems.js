@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'; // prototype brough in & defined below
 
 
 
@@ -30,7 +30,7 @@ export class Todoitems extends Component {
 }
 
 
-//Proptypes
+//We define our Proptypes here
 Todoitems.propTypes = {
     todo: PropTypes.object.isRequired,
     markComplete: PropTypes.func.isRequired,
