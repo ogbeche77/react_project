@@ -55,7 +55,7 @@ return (
   <Route exact path="/" render={props => (
     <React.Fragment>
     <AddTodo addTodo={this.addTodo} />
-    <Todos todos={this.state.todos} markComplete={this.markComplete}
+    <Todos todos={this.state.todos} markComplete={this.markComplete} 
   delTodo={this.delTodo} />
     </React.Fragment>
   )} />
