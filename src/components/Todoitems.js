@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'; // prototype brough in & defined below
 export class Todoitems extends Component {
     getStyle =() =>{ // Line through if the task is completed & other styling as well. Style method is defined below
        return {
-           background: 'blue',
+           background: '#D9A035',
            padding: '10px',
            borderBottom: '1px #ccc dotted',
            textDecoration: this.props.todo.completed ?
@@ -39,8 +39,8 @@ Todoitems.propTypes = {
 
 
  const btnStyle = {
-     background: 'red',
-     color:'yellow',
+     background: '#031D44',
+     color:'#FFB642',
      border: 'none',
      padding:'0px 5px 0px 5px',
      borderRadius: '30%',
