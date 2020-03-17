@@ -39,7 +39,7 @@ class App extends Component {
 
   //Add Todo
   addTodo = (title) => {
-    axios.post('https://jsonplaceholder.typicode.com/todos', { 
+    axios.post('https://jsonplaceholder.typicode.com/todos', { // make a post request to REST API
       title: title,
       completed: false
     })
