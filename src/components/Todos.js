@@ -15,7 +15,7 @@ markComplete = ()=>{
 }
 }
 
-// We define all our PropTypes
+// We define all our PropTypes here
 Todos.propTypes = {
   todos: PropTypes.array.isRequired,
   markComplete: PropTypes.func.isRequired,
