@@ -32,7 +32,7 @@ class App extends Component {
 
   //Delete Todo
   delTodo = (id)=> {
-    axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
+    axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`) //we use back ticks because we also need id to delete
     .then(res => this.setState({ todos: [...this.state.todos.filter(todo => todo.id!== id)] })); //we use filter array method to loop through & return what we define
     
   }
