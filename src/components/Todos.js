@@ -8,7 +8,7 @@ markComplete = ()=>{
 }
 
     render(){
-          return this.props.todos.map((todo)=>(
+          return this.props.todos.map((todo)=>( //map is used here to loop through & output jsx
             <Todoitems key={todo.id} todo={todo} markComplete=
             {this.props.markComplete} delTodo={this.props.delTodo} />
           ));
