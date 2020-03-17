@@ -45,7 +45,7 @@ class App extends Component {
     .then(res=> this.setState({ todos: [...this.state.todos, res.data] }) );
     
   }
-
+//All is wrap within a router but home & about page is further wrapped within a route
   render(){ 
 return (
   <Router>
@@ -59,7 +59,7 @@ return (
   delTodo={this.delTodo} />
     </React.Fragment>
   )} />
-<Route path='/about' component = {about}  />
+<Route path='/about' component = {about}  /> 
 
   </div>
   </div> 
