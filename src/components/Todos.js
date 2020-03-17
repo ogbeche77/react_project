@@ -3,8 +3,7 @@ import Todoitems from './Todoitems';
 import PropTypes from 'prop-types';
 class Todos extends Component {
 markComplete = ()=>{
-  console.log('hello');
-
+ 
 }
 
     render(){
