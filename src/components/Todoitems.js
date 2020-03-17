@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'; // prototype brough in & defined below
 
 
 export class Todoitems extends Component {
-    getStyle =() =>{
+    getStyle =() =>{ // Line through if the task is completed. Style method is defined below
        return {
            background: 'blue',
            padding: '10px',
@@ -18,7 +18,7 @@ export class Todoitems extends Component {
     render() {
         const {id, title } = this.props.todo;
         return (
-            <div style={this.getStyle()} >
+            <div style={this.getStyle()} > 
                 <p>
                 <input type ='checkbox' onChange={this.props.markComplete.bind
                     (this, id)}  /> {" "}
@@ -36,7 +36,8 @@ Todoitems.propTypes = {
     markComplete: PropTypes.func.isRequired,
     delTodos: PropTypes.func.isRequired
   }
-  
+
+
  const btnStyle = {
      background: 'red',
      color:'yellow',
