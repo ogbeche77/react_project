@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Todos from './components/Todos';  //Todos.js brought in to app.js
 import AddTodo from './components/AddTodo';
-import about from './components/pages/about';
+import about from './components/pages/about'; // about page brought in
 /* import  {v4 as uuidv4} from 'uuid';*/
 
 import './App.css';
