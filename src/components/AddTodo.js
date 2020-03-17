@@ -6,11 +6,12 @@ export class AddTodo extends Component {
         title: ''
     }
     onSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // to prevent form from submitting the actual file
         this.props.addTodo(this.state.title);
         this.setState({ title: ' '});
     }
 
+    //ensures item can be added to todo list with setstate
     onChange =(e)=> this.setState({ [e.target.name]: e.target.value});
 
 
